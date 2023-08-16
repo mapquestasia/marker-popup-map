@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { LeafletMap } from "./components/LeafletMap";
+import { MapLibreComponent } from "./components/MapLibreComponent";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="flex-container">
+        <h1>React Leaflet</h1>
+        <LeafletMap />
+      </div>
+      <div className="flex-container">
+        <h1>React Map GL (MapLibre)</h1>
+        <MapLibreComponent />
+      </div>
     </div>
   );
 }

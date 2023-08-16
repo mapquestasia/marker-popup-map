@@ -1,0 +1,25 @@
+.container {
+  flex: 1;
+}
+
+.place-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.place-info h3 {
+  color: red;
+}
+
+.leaflet-popup-content-wrapper p {
+  margin: 0 !important;
+}
+
+.position-popup .leaflet-popup-content-wrapper {
+  text-align: center;
+}
+
+.position-popup .leaflet-popup-content-wrapper p {
+  margin: 0;
+}
